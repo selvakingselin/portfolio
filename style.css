@@ -122,7 +122,7 @@ header {
 }
 .home .content .social-icons{
     margin-top: 40px;
-    background-color: #fff;
+    background-color: transparent;
 
 }
 .home .social-icons a{
@@ -148,7 +148,7 @@ header {
 
 .about {
     padding: 100px 0;
-    background: #fff;
+    background: transparent;
 }
 .about .content {
     margin: 0 auto;
@@ -451,6 +451,7 @@ footer {
     background-color: gray;
     color: #fff;
     padding: 20px 0;
+    width: auto;
 }
 
 .footer-container {
@@ -459,19 +460,34 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    align-items: center;
+    align-items: start;
 }
-.footer-about, .footer-links, .footer-contact {
+.footer-about, .footer-links, .footer-contact, .footer-email {
     flex: 1;
     padding: 10px;
 }
-
-.footer-about h3, .footer-links h3, .footer-contact h3 {
+.footer-about h3, .footer-links h3, .footer-contact h3, .footer-email h3{
     margin-bottom: 10px;
     font-size: 18px;
     color: black;
 }
-
+.footer-links{
+    text-align: center;
+}
+.footer-email .email-box input{
+    background-color: #fff;
+    padding: 12px 50px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.email-box input:nth-child(2):hover{
+    background-color: #7d2ae8;
+}
+.email-box input:nth-child(2){
+    background-color: #fff;
+    padding: 10px;
+}
 .footer-about p, .footer-contact p {
     font-size: 14px;
     line-height: 1.6;
@@ -522,4 +538,11 @@ footer {
 .footer-bottom p {
     margin: 0;
     font-size: 14px;
+}
+
+/* media query*/
+@media screen and (max-width: 600px) {
+    body{
+        background-color: red;
+    }
 }
